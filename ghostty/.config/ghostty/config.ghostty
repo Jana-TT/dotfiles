@@ -1,9 +1,12 @@
 # Font: JetBrains Mono Nerd Font, ligatures disabled
 font-family = JetBrainsMono Nerd Font
-font-size = 16
+font-size = 14
 font-feature = -calt
 font-feature = -liga
 font-feature = -dlig
 
 # Option acts as Alt (needed for fzf Alt-C)
 macos-option-as-alt = true
+
+# Background: default #282c34 made 20% darker
+background = #20232a
