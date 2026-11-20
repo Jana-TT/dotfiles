@@ -17,3 +17,8 @@ command = "ruff"
 [language-server.basedpyright]
 args = ["--stdio"]
 command = "basedpyright-langserver"
+
+[[language]]
+auto-format = true
+language-servers = ["gopls"]
+name = "go"

@@ -19,6 +19,8 @@ brew "fzf-tab"
 brew "gh"
 # Open source programming language to build simple/reliable/efficient software
 brew "go"
+# Language server for the Go language
+brew "gopls"
 # Post-modern modal text editor
 brew "helix"
 # Pinentry for GPG on Mac
