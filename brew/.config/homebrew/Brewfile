@@ -29,6 +29,8 @@ brew "pinentry-mac"
 brew "postgresql@17", link: true
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
+# Toolkit to help you get started with Spec-Driven Development
+brew "specify"
 # Cross-shell prompt for astronauts
 brew "starship"
 # Organize software neatly under a single directory tree (e.g. /usr/local)
