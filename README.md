@@ -15,9 +15,6 @@ Stow refuses to overwrite an existing real file: move it aside first.
 | Package | Installs | Needs on PATH |
 |---|---|---|
 | `claude` | `~/.claude/statusline.sh` (set `statusLine` in settings.json to `bash ~/.claude/statusline.sh`) | bash, jq, git |
-| `fish` | `~/.config/fish/{config.fish,conf.d/rustup.fish}` | fish, starship |
-| `starship` | `~/.config/starship.toml` | starship |
-| `alacritty` | `~/.config/alacritty/alacritty.toml` | alacritty, fish, JetBrainsMono Nerd Font |
 | `helix` | `~/.config/helix/{config.toml,languages.toml,ignore}` | hx, ruff, basedpyright |
 | `tmux` | `~/.config/tmux/tmux.conf` | tmux, fish |
 | `git` | `~/.gitconfig`, `~/.config/git/ignore` | git, gh (credential helper) |
