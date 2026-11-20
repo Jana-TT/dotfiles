@@ -1,0 +1,8 @@
+# Never commit secrets or machine state
+.credentials.json
+.claude.json
+hosts.yml
+*.pem
+*.key
+.env
+settings.local.json

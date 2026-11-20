@@ -1,0 +1,19 @@
+[[language]]
+name = "json"
+
+[language.indent]
+tab-width = 4
+unit = " "
+
+[[language]]
+auto-format = true
+language-servers = ["basedpyright"]
+name = "python"
+
+[language.formatter]
+args = ["format", "-"]
+command = "ruff"
+
+[language-server.basedpyright]
+args = ["--stdio"]
+command = "basedpyright-langserver"

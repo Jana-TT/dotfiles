@@ -1,0 +1,19 @@
+theme = "darcula"
+
+[editor]
+line-number = "relative"
+mouse = true
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.inline-diagnostics]
+cursor-line = "hint"
+other-lines = "error"
+
+[keys.normal]
+X = "select_line_above"
+x = "select_line_below"
+
