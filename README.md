@@ -16,7 +16,7 @@ Stow refuses to overwrite an existing real file: move it aside first.
 |---|---|---|
 | `claude` | `~/.claude/statusline.sh` (set `statusLine` in settings.json to `bash ~/.claude/statusline.sh`) | bash, jq, git |
 | `helix` | `~/.config/helix/{config.toml,languages.toml,ignore}` | hx, ruff, basedpyright |
-| `tmux` | `~/.config/tmux/tmux.conf` | tmux, fish |
+| `tmux` | `~/.config/tmux/tmux.conf` | tmux |
 | `git` | `~/.gitconfig`, `~/.config/git/ignore` | git, gh (credential helper) |
 
 ## Not tracked on purpose
