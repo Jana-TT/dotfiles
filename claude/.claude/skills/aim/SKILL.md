@@ -27,6 +27,27 @@ Sort what was given into Background, Task and Testing (below). Mark each as clea
 thin or missing. A long input is mostly clear: ask only about the gaps and the
 unstated edge cases, never re-ask what it already says.
 
+## 2b. Do the homework before asking
+
+The brief feeds `/speckit-specify`, which starts cold. Make it self-contained:
+
+- **Refine, don't transcribe.** For a long input, rewrite it for specify: remove
+  chatter and duplication, keep every fact, number and stated mechanism, and keep the
+  user's meaning. Never drop a requirement to tidy.
+- **Resolve shorthand.** The user will use short names, abbreviations and references
+  ("the lanes", "banner style from spec 010", "the dt rows"). Find what each one
+  actually is in the code, specs and docs, and write the concrete reference in the
+  brief: file paths, route and function names, spec ids, table and column names, real
+  examples of the current behavior. If a term has several plausible meanings, ask.
+- **Sweep each list for what's missing.** A list the user gives (pages, endpoints,
+  tables, templates, jobs) is usually a few examples from live features, not the whole
+  set. For every list, search the codebase for other places the same change applies
+  (rg/fd, route tables, templates, the architecture and guard tests, specs). Report
+  the full set you found, marking which the user named and which you added.
+  Interview the user on each added item: include, exclude (record under Out of
+  scope), or defer (record under Open questions). Never silently widen or narrow the
+  scope.
+
 ## 3. Interview
 
 - Your first message is a question, never a draft. With no input, ask what the change
@@ -34,6 +55,8 @@ unstated edge cases, never re-ask what it already says.
 - One AskUserQuestion per message, at most 4 options, recommended option first and
   labelled "(Recommended)". Use `multiSelect` for list items. Ask in prose only when
   you cannot list candidates.
+- Put the added list items from the sweep to the user with `multiSelect`, so each
+  can be accepted or dropped.
 - Stop when all three are solid:
   - Background is accurate, with the current state checked against the code.
   - Task is a declarative end state a reader could check.
@@ -52,13 +75,15 @@ no numbers).
 **Defined:** <YYYY-MM-DD>
 
 ## Background
-The situation and current state, numbered, each point a verified fact. Include the
-dependencies this change relies on (earlier specs, services, data, decisions).
+The situation and current state, numbered, each point a verified fact with its
+concrete reference (path, route, spec id, real example). Include the dependencies
+this change relies on (earlier specs, services, data, decisions).
 
 ## Task
 The desired end state, declarative and numbered: what is true afterwards, not the
 steps to get there. Each point testable. Include the user's stated mechanisms
-verbatim (e.g. "unique key in the Flyway migration").
+verbatim (e.g. "unique key in the Flyway migration"). Every list is the full agreed
+set from the sweep, not just the user's examples.
 
 ## Testing
 How we verify the Task was reached, as numbered steps. For A/B: the baseline (A) and
