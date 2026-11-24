@@ -3,5 +3,19 @@
   "statusLine": {
     "type": "command",
     "command": "bash ~/.claude/statusline.sh"
+  },
+  "enabledPlugins": {
+    "remember@claude-plugins-official": true,
+    "frontend-design@anthropic-plugin-directory": true,
+    "skill-creator@anthropic-plugin-directory": true,
+    "claude-md-management@anthropic-plugin-directory": true,
+    "claude-code-setup@anthropic-plugin-directory": true,
+    "commit-commands@anthropic-plugin-directory": true,
+    "chrome-devtools-mcp@claude-plugins-official": true,
+    "explanatory-output-style@anthropic-plugin-directory": true,
+    "mattpocock-skills@claude-plugins-official": true,
+    "hookify@anthropic-plugin-directory": true,
+    "gopls-lsp@claude-plugins-official": true,
+    "mcp-server-dev@anthropic-plugin-directory": true
   }
 }

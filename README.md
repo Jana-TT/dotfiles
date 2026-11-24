@@ -39,7 +39,7 @@ Stow refuses to overwrite an existing real file: move it aside first.
 ## Not tracked on purpose
 - `~/.claude/settings.json` is seeded, not stowed: Claude rewrites it itself, which would break a symlink.
   `install.sh` copies `seed/claude-settings.json` there once and never overwrites it. Edits made in `~` do not
-  flow back; update the seed by hand. Never put tokens in either file (the old copy held a plaintext
+  flow back; update the seed by hand (it lists `enabledPlugins`, so a fresh machine gets the plugins re-enabled and Claude fetches them on first start). Never put tokens in either file (the old copy held a plaintext
   `GITHUB_PERSONAL_ACCESS_TOKEN`; use a shell env var or `gh auth token`).
 - `~/.claude/{.credentials.json,projects,sessions,history.jsonl,plugins}`, `~/.claude.json`,
   `~/.config/gh/hosts.yml`, `~/.ssh`, `~/.aws`.
