@@ -1,4 +1,4 @@
-tap "domt4/autoupdate"
+tap "domt4/autoupdate", trusted: { commands: ["autoupdate"] }
 # Official Amazon AWS command-line interface
 brew "awscli"
 # Clone of cat(1) with syntax highlighting and Git integration
@@ -29,6 +29,8 @@ brew "pinentry-mac"
 brew "postgresql@17", link: true
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
+# 7-Zip is a file archiver with a high compression ratio
+brew "sevenzip"
 # Toolkit to help you get started with Spec-Driven Development
 brew "specify"
 # Cross-shell prompt for astronauts
